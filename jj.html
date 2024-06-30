@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login">
+         <h2>Log In</h2>
+         <input type="text" id="email" placeholder="enter Email ....">
+         <input type="password" id="password" placeholder="enter password.... ">
+         <button id="sign_in">Login</button>
+    </div>
+
+     <!-- my blog area admin -->
+      <div class="my_blog">
+          <header>
+             <nav>
+                <ul>
+                    <li><a href="#" class="link">Home</a></li>
+                    <li><a href="blog.html" class="link">Blog</a></li>
+                    <li><a href="#" id="logout" class="link">Logout</a></li>
+                </ul>
+             </nav>
+          </header>
+          <div class="notify"></div>
+          <div class="container main">
+             <div class="main_content">
+                  <!-- post form -->
+                  <div class="post_form">
+                    <label >Title</label><br>
+                    <input type="text" id="title" placeholder="enter title....."><br>
+                    <label>Your Post</label><br>
+                    <textarea name="" id="post_content" cols="40" rows="10" placeholder="enter content of your post....."></textarea><br>
+                    <button id="post_btn" class="post_btn">Post Now</button>
+                    <button id="update_btn" class="update_btn">Update Post</button>
+                 </div>
+                 <!-- table -->
+                 <div class="my_content">
+                    <!-- <img src="bloon.jpg" alt=""> -->
+                     <h2 class="pst">My Posts</h2>
+                     <table>
+                        
+                     </table>
+                 </div>
+             </div>
+          </div>
+          <footer>
+            <div class="footer_text">
+                 <p>Copy Right Text Reserve Kajal</p>
+            </div>
+          </footer>
+      </div>
+    
+
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
