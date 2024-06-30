@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(86, 176, 212);
+    counter-reset: section;
+}
+
+
+/* login  */
+
+.login{
+    width: 50%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.login h1{
+    text-align: end;
+    padding: 5px;
+}
+
+.login input {
+    display: block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: 1px solid #111;
+     outline: none;
+     width: 100%;
+}
+
+.login button{
+    width: 100%;
+    padding: 5px 10px;
+    background: #111;
+    border: 1px solid #111;
+    color: #fff;
+    text-align: center;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+
+}
+.login button:hover{
+    background: transparent;
+    color: #111;
+}
+
+/* header */
+
+header {
+    background:  rgb(228, 231, 20);
+    color: #fff;
+    width: 100%;
+    height: 8ch;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+header ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    margin-top: 1ch;
+    font-size: x-large;
+    color: white;
+}
+.main_content .post_form input ,textarea{
+    width: 30%;
+    border: 1px solid #111;
+    padding: 10px 5px;
+    margin: 10px 4px;
+    margin-top: 1ch;
+    margin-left: 0ch;
+}
+textarea{
+    height: 50%;
+    width: 50%;
+    background-color: #252424;
+    color: white;
+}
+.post_form{
+    /* width: 80%;
+    height: 30%; */
+    font-size: 5ch;
+    margin-top: 0;
+    /* background-image: url('coco.jpg'); */
+    background-color: rgb(228, 231, 20);
+    /* position: absolute; 
+    bottom: 23ch;  
+     left: 13ch; */
+     /* margin-right: 32ch; */
+}
+.pst{
+    font-size: 4ch;
+    position: absolute; 
+    bottom: 23ch;  
+     right: 13ch;
+    
+}
+.main_content .post_form button{
+    width: 30%;
+    height: 6ch;
+    background: #111;
+    color: #fff;
+    padding: 5px 0;
+    border: 1px solid #111;
+    transition: 0.5s ease-in-out;
+}
+.main_content .post_form button:hover{
+    background: transparent;
+}
+
+
+/* update_btn */
+
+.my_blog{
+    display: none;
+}
+
+.update_btn {
+    display: none;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+/* notifiy */
+
+.notify {
+    width: 80%;
+    height: 4ch;
+    display: block;
+    margin:  0 auto;
+    text-align: center;
+    background: rgb(35, 165, 8);
+    color: #fff;
+    margin-top: 30px;
+}
+
+
+/* my_content */
+
+.my_content {
+    width: 40%;
+    height: 63%;
+    padding: 40px 20px; 
+     position: absolute; 
+     top: 23ch; 
+     right: 9ch;
+     /* background-image: url('moon.jpg'); */
+     background-color: rgb(228, 231, 20);
+}
+
+.my_content table {
+    width: 80%;
+    margin: 30px auto;
+    box-shadow: rgba(7, 216, 52, 0.16) 0px 1px 4px;
+    padding: 20px;
+}
+
+.my_content table tr{
+    margin: 30px 0;
+    width: 100%;
+  
+}
+
+
+
+.my_content table tr button{
+    padding: 5px 10px;
+    border: 1px solid #111;
+   transition: .5s ease-in;
+   color: #fff;
+   cursor: pointer;
+}
+
+.my_content table tr button.delete{
+    background: rgb(106, 8, 8);
+}
+.my_content table tr button.update{
+    background: rgb(5, 117, 33);
+}
+.my_content table tr button:hover{
+    background: transparent;
+    color: #111;
+}
+
+
+/* id */
+
+.postNumber{
+    height: 20px;
+    display: inline-block;
+    width: 20px;
+}
+
+.postNumber::before{
+    counter-increment: section;
+    content: counter(section) ;
+}
+
+
+/*  */
+
+
+.main {
+    width: 70%;
+    margin: 0  auto;
+    padding: 60px 0;
+}
+
+.post {
+    margin: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px;
+}
+.post h2{
+    padding: 10px 0;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    color: #fff;
+    background: #111;
+    text-align: center;
+}
+
+.link:visited {
+    color: white;
+}
+
+.link:hover {
+    color: orangered;
+}
+
+.link:active {
+    color: darkred;
+}
