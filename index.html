@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper #0288d1 light-blue darken-2">
+          <a href="#" class="brand-logo">Portfolio</a>
+          <ul id="nav-mobile" class="right">
+            <li><a class="modal-trigger" href="#modal2">Login</a></li>
+            <li><a class="modal-trigger" href="#modal1">Signup</a></li>
+            <li><a href="collapsible.html">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+  <!-- signup Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>signup</h4>
+      <form>
+        <input type="email" id="signupEmail" placeholder="email">
+        <input type="password" id="signupPassword" placeholder="password">
+        <button class="btn waves-effect #0288d1 light-blue darken-2" type="submit" >Submit</button>
+      </form>
+    </div>
+  </div>
+ <!-- login Structure -->
+ <div id="modal2" class="modal ">
+    <div class="modal-content">
+      <h4>Login</h4>
+      <form>
+        <input type="email" id="loginEmail" placeholder="email">
+        <input type="password" id="loginPassword" placeholder="password">
+        <button class="btn waves-effect #0288d1 light-blue darken-2" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+          document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+     </script>
+ <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+<script>
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCzTwR3gycrvENzNc3L2pMwjPAOvT_rbN8",
+  authDomain: "prct-6add0.firebaseapp.com",
+  projectId: "prct-6add0",
+  storageBucket: "prct-6add0.appspot.com",
+  messagingSenderId: "974370296034",
+  appId: "1:974370296034:web:2e17d61c50574e097ecebb"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+    
+</script>
+
+</body>
+</html>
